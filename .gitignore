@@ -1,0 +1,16 @@
+# Root .gitignore for Gorebel
+.DS_Store
+node_modules/
+dist/
+demo/node_modules/
+demo/dist/
+
+# Design files (keep if you want them on GitHub, but usually PDFs are heavy)
+#*.pdf 
+
+# Allow assets but ignore junk
+**/.DS_Store
+**/.idea/
+**/.vscode/
+**/Thumbs.db
+
