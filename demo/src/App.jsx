@@ -24,27 +24,30 @@ function App() {
     <div className="App">
       {/* Header */}
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
-        <div className="logo">
-          <a href="#">
-            <img
-              src="/assets/Asset 14.png"
-              alt="GOREBEL Artificial Intelligence"
-            />
-          </a>
-        </div>
-        
-        <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
-          <i className={mobileMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
-        </button>
+        <div className="header-inner container">
+          <div className="logo">
+            <a href="#">
+              <img
+                src="/assets/Asset 14.png"
+                alt="GOREBEL Artificial Intelligence"
+              />
+            </a>
+          </div>
+          
+          <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
+            <i className={mobileMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
+          </button>
 
-        <nav className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
-          <a href="#" onClick={() => setMobileMenuOpen(false)}>Home</a>
-          <a href="#partners" onClick={() => setMobileMenuOpen(false)}>Partners</a>
-          <a href="#gartner" onClick={() => setMobileMenuOpen(false)}>Gartner</a>
-          <a href="#projects" onClick={() => setMobileMenuOpen(false)}>Projects</a>
-          <a href="#about-us" onClick={() => setMobileMenuOpen(false)}>About Us</a>
-          <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-        </nav>
+          <nav className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
+            <a href="#" onClick={() => setMobileMenuOpen(false)}>Home</a>
+            <a href="#partners" onClick={() => setMobileMenuOpen(false)}>Partners</a>
+            <a href="#gartner" onClick={() => setMobileMenuOpen(false)}>Gartner</a>
+            <a href="#customer-work" onClick={() => setMobileMenuOpen(false)}>Customer Work</a>
+            <a href="#projects" onClick={() => setMobileMenuOpen(false)}>Projects</a>
+            <a href="#about-us" onClick={() => setMobileMenuOpen(false)}>About Us</a>
+            <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+          </nav>
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -95,7 +98,7 @@ function App() {
       <section
         id="partners"
         className="section text-center"
-        style={{ backgroundColor: "#f7f7f7" }}
+        style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="container">
           <h2 className="section-title center">Our Partners</h2>
@@ -162,13 +165,13 @@ function App() {
         <div className="composable-content text-right">
           <div className="gartner-logo-wrapper">
             <img
-              src="/assets/Asset 92.png"
+              src="/assets/gartner_logo_new.jpeg"
               alt="Gartner Logo"
               className="gartner-logo"
             />
             <div
               className="title-underline"
-              style={{ width: "380px", margin: "0 0 25px auto" }}
+              style={{ width: "240px", margin: "0 0 25px auto" }}
             ></div>
           </div>
           <h3 className="composer-title text-right">
@@ -204,13 +207,13 @@ function App() {
 
       {/* How We Work ? */}
       <section
-        className="section bg-light text-center process-hub-section"
-        style={{ background: "var(--white)" }}
+        className="section text-center process-hub-section"
+        style={{ backgroundColor: "var(--bg-soft)" }}
       >
         <div className="container">
           <h2 className="section-title center">How we Work ?</h2>
           <div
-            className="title-underline center"
+            className="title-underline center teal-line"
             style={{ width: "240px" }}
           ></div>
           <p className="process-subtitle mb-5">
@@ -222,15 +225,15 @@ function App() {
             {/* Background Arch SVG */}
             <div className="process-arc">
               <svg
-                viewBox="0 0 1000 300"
+                viewBox="0 0 1000 500"
                 preserveAspectRatio="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M -50,10 Q 500,400 1050,10"
+                  d="M 50,110 Q 500,650 950,110"
                   fill="none"
                   stroke="#1f2a44"
-                  strokeWidth="1.5"
+                  strokeWidth="2"
                   strokeDasharray="6,12"
                 />
               </svg>
@@ -306,7 +309,7 @@ function App() {
       {/* Specialty Technologies */}
       <section
         className="section text-center"
-        style={{ backgroundColor: "#f7f7f7" }}
+        style={{ backgroundColor: "var(--white)" }}
       >
         <div className="container">
           <h2 className="section-title center">Specialty Technologies</h2>
@@ -390,7 +393,7 @@ function App() {
           <div className="tech-block mt-5">
             <div className="tech-logo aws-logo-block">
               <img
-                src="/assets/aws_trans.png"
+                src="/assets/0179dSC1AqaTy8DbcTJMDYE-7.webp"
                 alt="AWS Logo"
                 className="brand-header-img aws-header"
               />
@@ -458,7 +461,11 @@ function App() {
 
 
       {/* Customer Work Slider */}
-      <section className="customer-work section text-center">
+      <section
+        id="customer-work"
+        className="customer-work section text-center"
+        style={{ backgroundColor: "var(--bg-soft)" }}
+      >
         <div className="container">
           <h2 className="section-title center">Customer Work</h2>
           <div
@@ -484,7 +491,7 @@ function App() {
                 <img src="/assets/Asset 47.png" alt="ASML" />
               </div>
               <div className="logo-slide">
-                <img src="/assets/aws_trans.png" alt="AWS Logo" />
+                <img src="/assets/0179dSC1AqaTy8DbcTJMDYE-7.webp" alt="AWS Logo" />
               </div>
               {/* Duplicate Set for Infinite Slide */}
               <div className="logo-slide">
@@ -503,7 +510,7 @@ function App() {
                 <img src="/assets/Asset 47.png" alt="ASML" />
               </div>
               <div className="logo-slide">
-                <img src="/assets/aws_trans.png" alt="AWS Logo" />
+                <img src="/assets/0179dSC1AqaTy8DbcTJMDYE-7.webp" alt="AWS Logo" />
               </div>
             </div>
           </div>
@@ -511,12 +518,12 @@ function App() {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="section bg-light pt-0">
+      <section id="projects" className="section" style={{ backgroundColor: "var(--white)" }}>
         <div className="container text-center">
           <h2 className="section-title center">Projects</h2>
           <div
             className="title-underline center"
-            style={{ width: "135px" }}
+            style={{ width: "160px" }}
           ></div>
           <p className="subtitle mb-5">Projects We Brought to Life with AI</p>
 
@@ -667,12 +674,13 @@ function App() {
       </section>
 
       {/* About Us */}
-      <section id="about-us" className="section container about-us-section">
-        <h2 className="section-title center">About Us</h2>
-        <div 
-          className="title-underline lime center" 
-          style={{ width: "120px" }}
-        ></div>
+      <section id="about-us" className="section about-us-section" style={{ backgroundColor: "var(--bg-soft)" }}>
+        <div className="container">
+          <h2 className="section-title center">About Us</h2>
+          <div 
+            className="title-underline lime center" 
+            style={{ width: "120px" }}
+          ></div>
         
         <p className="about-lead">
           We are South Africa’s AI enablement facility, helping businesses transform ideas into real, measurable outcomes. From strategy to deployment, we deliver production-ready AI solutions.
@@ -693,6 +701,7 @@ function App() {
           <p className="about-point-p">
             • We work at the intersection of cloud technologies, edge computing, and machine learning, with full-stack deployment capabilities across Microsoft Azure and AWS environments.
           </p>
+        </div>
         </div>
       </section>
 
@@ -815,11 +824,10 @@ function App() {
               <div className="footer-logo">
               <a href="#">
                 <img
-                  src="/assets/Asset 14.png"
+                  src="/assets/New-gorebel-logo.png"
                   alt="GOREBEL"
                   style={{
                     maxWidth: "200px",
-                    filter: "brightness(0) invert(1)",
                   }}
                 />
               </a>

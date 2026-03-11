@@ -5,6 +5,7 @@
   --text-dark: #222222;
   --text-light: #f5f5f5;
   --bg-light: #fdfdfd;
+  --bg-soft: #f8fafc;
   --font-family: 'Inter', sans-serif;
   --white: #ffffff;
 }
@@ -45,7 +46,7 @@ img {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 120px 0;
 }
 
 .text-teal {

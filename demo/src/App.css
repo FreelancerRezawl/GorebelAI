@@ -1,17 +1,19 @@
-/* Header */
 .header {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 80px;
+  padding: 15px 0;
   z-index: 100;
   background-color: var(--white);
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header.scrolled {
@@ -147,6 +149,13 @@
   border-radius: 2px;
 }
 
+.title-underline.teal-line {
+  background: var(--teal);
+  background-image: none;
+  height: 3px;
+  border-radius: 2px;
+}
+
 .subtitle {
   font-size: 1.15rem;
   font-weight: 500;
@@ -158,7 +167,7 @@
 /* About Us (Who We Are Redesign) */
 .about-us-section {
   text-align: center;
-  padding: 100px 0;
+  padding: 140px 0;
 }
 
 .about-lead {
@@ -218,7 +227,7 @@
 
 .partner-card {
   background: var(--white);
-  padding: 40px;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   text-align: center;
@@ -230,20 +239,20 @@
 }
 
 .logo-wrapper {
-  height: 140px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .external-partner-logo {
   object-fit: contain;
 }
 
-.ms-logo { height: 110px; width: auto; }
-.aws-logo { height: 140px; width: auto; }
-.cf-logo { height: 95px; width: auto; }
+.ms-logo { height: 140px; width: auto; }
+.aws-logo { height: 170px; width: auto; }
+.cf-logo { height: 120px; width: auto; }
 
 .partner-card h3 {
   margin-bottom: 8px;
@@ -271,8 +280,8 @@
 .composable-ai {
   display: flex;
   align-items: center;
-  gap: 50px;
-  padding: 100px 0;
+  gap: 60px;
+  padding: 140px 0;
 }
 
 .composable-image {
@@ -288,7 +297,7 @@
 }
 
 .gartner-logo {
-  max-width: 380px;
+  max-width: 240px;
   margin: 0 0 10px auto;
   display: block;
 }
@@ -320,8 +329,7 @@
 
 /* How We Work */
 .process-hub-section {
-  padding-bottom: 120px;
-  background-color: var(--white);
+  padding: 140px 0;
 }
 
 .process-title-underline {
@@ -338,7 +346,7 @@
   position: relative;
   max-width: 1050px;
   margin: 50px auto 0;
-  height: 480px; 
+  height: 550px; 
 }
 
 .process-arc {
@@ -346,7 +354,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 500px;
   z-index: 1;
 }
 
@@ -357,10 +365,10 @@
   z-index: 3;
 }
 
-.step-1 { top: 113px; left: 21%; transform: translateX(-50%); }
-.step-2 { top: 159px; left: 39%; transform: translateX(-50%); }
-.step-3 { top: 159px; left: 61%; transform: translateX(-50%); }
-.step-4 { top: 113px; left: 79%; transform: translateX(-50%); }
+.step-1 { top: 187px; left: 16%; transform: translateX(-50%); }
+.step-2 { top: 310px; left: 34%; transform: translateX(-50%); }
+.step-3 { top: 310px; left: 66%; transform: translateX(-50%); }
+.step-4 { top: 187px; left: 84%; transform: translateX(-50%); }
 
 .baked-circle-img {
   width: 76px;
@@ -416,10 +424,10 @@
 
 .process-center {
   position: absolute;
-  top: 10px;
+  top: 70px;
   left: 50%;
   transform: translateX(-50%);
-  width: 160px;
+  width: 170px;
   z-index: 2;
 }
 
@@ -463,7 +471,8 @@
 }
 
 .aws-header {
-  height: 48px;
+  height: auto;
+  max-width: 180px;
 }
 
 .tech-grid {
@@ -1201,7 +1210,7 @@
 
 /* Customer Work Logo Slider */
 .customer-work {
-  padding: 80px 0;
+  padding: 120px 0;
   background: var(--white);
   overflow: hidden;
 }
@@ -1229,8 +1238,8 @@
 }
 
 .logo-slide img {
-  max-width: 200px;
-  max-height: 60px;
+  max-width: 230px;
+  max-height: 70px;
   object-fit: contain;
   transition: transform 0.5s ease;
 }
