@@ -93,6 +93,29 @@ function App() {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section id="about-us" className="section who-we-are-section">
+        <div className="container who-inner">
+          <div className="who-content">
+            <h2 className="who-title">Who We Are</h2>
+            <div className="who-underline"></div>
+            <p className="who-bold">
+              We are South Africa’s AI enablement facility,
+              helping businesses transform ideas into real,
+              measurable outcomes. From strategy to
+              deployment, we deliver production-ready AI
+              solutions.
+            </p>
+            <div className="who-points">
+              <p>• Based in George, Western Cape, GoRebel AI is a team of technologists and strategists building the future of business with Artificial Intelligence.</p>
+              <p>• We work at the intersection of cloud technologies, edge computing, and machine learning, with full-stack deployment capabilities across Microsoft Azure and AWS environments.</p>
+            </div>
+          </div>
+          <div className="who-image">
+            <img src="/assets/Asset 98.png" alt="Who We Are Team" />
+          </div>
+        </div>
+      </section>
 
       {/* Our Partners */}
       <section
@@ -476,7 +499,7 @@ function App() {
             <div className="logo-track">
               {/* First Set */}
               <div className="logo-slide">
-                <img src="/assets/sasol_logo.png" alt="Sasol" />
+                <img src="/assets/Sasol.png" alt="Sasol" />
               </div>
               <div className="logo-slide">
                 <img src="/assets/Asset 40.png" alt="Presspage" />
@@ -495,7 +518,7 @@ function App() {
               </div>
               {/* Duplicate Set for Infinite Slide */}
               <div className="logo-slide">
-                <img src="/assets/sasol_logo.png" alt="Sasol" />
+                <img src="/assets/Sasol.png" alt="Sasol" />
               </div>
               <div className="logo-slide">
                 <img src="/assets/Asset 40.png" alt="Presspage" />
@@ -673,38 +696,6 @@ function App() {
         </div>
       </section>
 
-      {/* About Us */}
-      <section id="about-us" className="section about-us-section" style={{ backgroundColor: "var(--bg-soft)" }}>
-        <div className="container">
-          <h2 className="section-title center">About Us</h2>
-          <div 
-            className="title-underline lime center" 
-            style={{ width: "120px" }}
-          ></div>
-        
-        <p className="about-lead">
-          We are South Africa’s AI enablement facility, helping businesses transform ideas into real, measurable outcomes. From strategy to deployment, we deliver production-ready AI solutions.
-        </p>
-
-        <div className="about-image-container">
-          <img src="/assets/Asset 98.png" alt="About GOREBEL AI" />
-        </div>
-
-        <h3 className="about-subheading">
-          We Are South Africa’s AI Enablement Facility
-        </h3>
-
-        <div className="about-points-list">
-          <p className="about-point-p">
-            • Based in George, Western Cape, GoRebel AI is a team of technologists and strategists building the future of business with Artificial Intelligence.
-          </p>
-          <p className="about-point-p">
-            • We work at the intersection of cloud technologies, edge computing, and machine learning, with full-stack deployment capabilities across Microsoft Azure and AWS environments.
-          </p>
-        </div>
-        </div>
-      </section>
-
       {/* Stats Section */}
       <section className="gorebel-stats-wrapper">
         <div className="container">
@@ -822,147 +813,69 @@ function App() {
           <div className="footer-main container">
             <div className="footer-col-1">
               <div className="footer-logo">
-              <a href="#">
-                <img
-                  src="/assets/New-gorebel-logo.png"
-                  alt="GOREBEL"
-                  style={{
-                    maxWidth: "200px",
-                  }}
-                />
-              </a>
-            </div>
+                <a href="#">
+                  <img src="/assets/New-gorebel-logo.png" alt="GOREBEL" style={{ maxWidth: "220px" }} />
+                </a>
+              </div>
               <p className="footer-text mt-3">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                 aliquam erat volutpat. Ut wisi enim ad minim veniam,
               </p>
               <div className="social-links mt-3">
-                <a href="#">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/gorebel-artificial-intelligence/" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a href="tel:+27725823326">
-                  <i className="fas fa-phone-alt"></i>
-                </a>
-                <a href="https://maps.app.goo.gl/UfEwh4bULqrb7q2r7" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-map-marker-alt"></i>
-                </a>
-                <a href="mailto:service@gorebel.ai">
-                  <i className="fas fa-envelope"></i>
-                </a>
-              </div>
-
-              <div className="newsletter-box mt-5">
-                <h4 className="text-teal mb-1">SUBSCRIBE TO OUR NEWSLETTER</h4>
-                <p className="footer-text mb-3" style={{ fontSize: "0.8rem" }}>
-                  Never Miss Anything From Gorebel By Signing Up To Our
-                  Newsletter
-                </p>
-                <div className="newsletter-input-group">
-                  <input type="email" placeholder="Enter Your Email" />
-                  <button className="btn-teal">
-                    <i className="fas fa-paper-plane"></i>
-                  </button>
-                </div>
+                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                <a href="#"><i className="fab fa-twitter"></i></a>
+                <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i></a>
               </div>
             </div>
 
             <div className="footer-col-2">
               <h4>Useful Links</h4>
               <ul className="footer-links">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#partners">Partners</a>
-                </li>
-                <li>
-                  <a href="#gartner">Gartner</a>
-                </li>
-                <li>
-                  <a href="#customer-work">Customer work</a>
-                </li>
-                <li>
-                  <a href="#project">Project</a>
-                </li>
-                <li>
-                  <a href="#about-us">About Us</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#gartner">Gartner</a></li>
+                <li><a href="#customer-work">Customer Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about-us">About Us</a></li>
               </ul>
             </div>
 
             <div className="footer-col-3">
               <h4>Contact Us</h4>
-              <p className="footer-text mt-3">
-                <a
-                  href="https://maps.app.goo.gl/UfEwh4bULqrb7q2r7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "inherit", textDecoration: "none" }}
-                >
-                  127 Tait St, Matlosana, North West, South Africa
-                </a>
+              <p className="footer-text mt-3">927 Tait St, Marikana, North West, South Africa</p>
+              <p className="footer-text mt-2">
+                <a href="mailto:help@gorebelai.com" style={{ color: "white", textDecoration: "none" }}>help@gorebelai.com</a>
               </p>
               <p className="footer-text mt-2">
-                <a
-                  href="mailto:service@gorebel.ai"
-                  style={{ color: "white", textDecoration: "none" }}
-                >
-                  service@gorebel.ai
+                <a href="tel:+2800857419095" style={{ color: "white", textDecoration: "none", fontWeight: '700' }}>
+                  (+280)085 741 9095
                 </a>
-              </p>
-              <p className="footer-text mt-2">
-                <a
-                  href="tel:+27725823326"
-                  style={{ color: "white", textDecoration: "none", fontWeight: '700' }}
-                >
-                  +27 (72) 582-3326
-                </a>
-                <br />
-                <span style={{ fontSize: "0.75rem", color: "#8493b8" }}>
-                  Click to Call
-                </span>
               </p>
             </div>
           </div>
+
+          <div className="footer-newsletter-row container">
+            <div className="newsletter-text">
+              <h4 className="text-teal mb-1">SUBSCRIBE TO OUR NEWSLETTER</h4>
+              <p className="footer-text">Never Miss Anything From Gorebel By Signing Up To Our Newsletter</p>
+            </div>
+            <div className="newsletter-form">
+              <div className="newsletter-input-group">
+                <input type="email" placeholder="Enter Your Email" />
+                <button className="newsletter-btn">
+                  <i className="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
           <div className="footer-bottom pb-4 text-center">
-            <div
-              className="container"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                gap: "20px",
-                fontSize: "0.85rem",
-              }}
-            >
-              <a 
-                href="#" 
-                onClick={(e) => { e.preventDefault(); setShowPrivacyModal(true); }}
-                style={{ color: "#8493b8", textDecoration: "none" }}
-              >
-                Privacy Policy
-              </a>
-              <a href="#" 
-                onClick={(e) => { e.preventDefault(); setShowCookieModal(true); }}
-                style={{ color: "#8493b8", textDecoration: "none" }}
-              >
-                Cookie Policy
-              </a>
-              <a href="#" 
-                onClick={(e) => { e.preventDefault(); setShowTermsModal(true); }}
-                style={{ color: "#8493b8", textDecoration: "none" }}
-              >
-                Terms of Use
-              </a>
+            <div className="container footer-bottom-links">
+              <a href="#" onClick={(e) => { e.preventDefault(); setShowPrivacyModal(true); }}>Privacy Policy</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); setShowCookieModal(true); }}>Cookie Policy</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); setShowTermsModal(true); }}>Terms of Use</a>
             </div>
           </div>
         </div>
