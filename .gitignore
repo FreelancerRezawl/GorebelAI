@@ -13,4 +13,6 @@ demo/dist/
 **/.idea/
 **/.vscode/
 **/Thumbs.db
+*.bak
+**/*.bak
 
