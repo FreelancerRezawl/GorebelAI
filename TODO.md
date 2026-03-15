@@ -1,8 +1,0 @@
-- [x] Stop existing Python HTTP server on port 8000
-- [x] Install dependencies in GorebelAI/demo
-- [x] Start Vite dev server on port 5173
-- [x] Open app in browser and verify full UI loads
-- [ ] Align `demo/src/App.jsx` content to PDF text/order
-- [ ] Align `demo/src/App.css` layout/style to PDF look
-- [ ] Run and verify updated UI at `http://localhost:5173`
-- [ ] Update testing status and report completion

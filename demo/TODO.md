@@ -1,4 +1,0 @@
-- [ ] Replace `src/App.jsx` with PDF-matching page structure and content
-- [ ] Rewrite `src/App.css` to match the PDF design layout and styling
-- [ ] Simplify `src/index.css` with neutral global base styles
-- [ ] Run `npm run build` to verify the project compiles successfully
