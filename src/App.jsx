@@ -69,8 +69,8 @@ function App() {
               by black-belt-level engineers.
             </p>
             <div className="hero-btns">
-              <a href="#contact" className="btn btn-teal">Schedule Call</a>
-              <a href="#projects" className="btn btn-outline">Explore AI Projects</a>
+              <a href="#contact" className="btn btn-teal">SCHEDULE CALL</a>
+              <a href="#projects" className="btn btn-outline">EXPLORE AI PROJECTS</a>
             </div>
           </div>
           <div className="hero-visual">
@@ -86,7 +86,7 @@ function App() {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill="var(--bg-soft)"
+              fill="var(--white)"
               d="M0,160 C80,60 160,60 240,160 C320,260 400,260 480,160 C560,60 640,60 720,160 C800,260 880,260 960,160 C1040,60 1120,60 1200,160 C1280,260 1360,260 1440,160 L1440,320 L0,320 Z"
             ></path>
           </svg>
@@ -98,7 +98,7 @@ function App() {
         <div className="container who-inner">
           <div className="who-content">
             <h2 className="who-title">Who We Are</h2>
-            <div className="title-underline" style={{ width: "190px" }}></div>
+            <div className="who-underline"></div>
             <p className="who-bold">
               We are South Africa’s AI enablement facility,
               helping businesses transform ideas into real,
@@ -222,7 +222,7 @@ function App() {
           </ul>
           <div className="text-right mt-4">
             <button className="btn btn-teal">
-              Gartner's Composable Architecture
+              Gartner's Composable Archetecture
             </button>
           </div>
         </div>
@@ -236,7 +236,7 @@ function App() {
         <div className="container">
           <h2 className="section-title center">How we Work ?</h2>
           <div
-            className="title-underline center"
+            className="title-underline center teal-line"
             style={{ width: "240px" }}
           ></div>
           <p className="process-subtitle mb-5">
@@ -541,7 +541,7 @@ function App() {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="section" style={{ backgroundColor: "var(--bg-soft)" }}>
+      <section id="projects" className="section" style={{ backgroundColor: "var(--white)" }}>
         <div className="container text-center">
           <h2 className="section-title center">Projects</h2>
           <div

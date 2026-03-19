@@ -50,7 +50,7 @@
   background-image: linear-gradient(rgba(19, 36, 75, 0.35), rgba(19, 36, 75, 0.55)), url('/assets/Asset 113.png');
   background-size: cover;
   background-position: center;
-  padding: 110px 0 170px; /* Extra padding at the bottom so the content sits above the wave valley safely */
+  padding: 80px 0 120px; /* Reduced from 110px top and 170px bottom */
   min-height: auto;
   overflow: hidden;
 }
@@ -136,7 +136,6 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: left center;
-  transform: scaleX(-1);
 }
 
 .title-underline.center {
@@ -167,8 +166,8 @@
 
 /* Who We Are Section */
 .who-we-are-section {
-  padding: 120px 0;
-  background-color: var(--bg-soft);
+  padding: 60px 0; /* Reduced from 120px */
+  background-color: var(--white);
 }
 
 .who-inner {
@@ -190,7 +189,13 @@
   margin-bottom: 5px;
 }
 
-
+.who-underline {
+  width: 150px;
+  height: 4px;
+  background-color: var(--teal);
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
 
 .who-bold {
   font-size: 1.35rem;
@@ -228,7 +233,9 @@
   .who-content {
     text-align: center;
   }
-
+  .who-underline {
+    margin: 0 auto 30px;
+  }
   .who-image {
     justify-content: center;
     margin-top: 50px;
@@ -302,7 +309,7 @@
   display: flex;
   align-items: center;
   gap: 60px;
-  padding: 140px 0;
+  padding: 60px 0; /* Reduced from 140px */
 }
 
 .composable-image {
@@ -350,10 +357,12 @@
 
 /* How We Work */
 .process-hub-section {
-  padding: 140px 0;
+  padding: 60px 0; /* Reduced from 140px */
 }
 
-
+.process-title-underline {
+  margin: 10px auto 25px;
+}
 
 .process-subtitle {
   font-size: 1.15rem;
@@ -630,8 +639,8 @@
 
 /* Gorebel Isolated Stats */
 .gorebel-stats-wrapper {
-  background-color: #e8f6fb;
-  padding: 100px 0;
+  background-color: #f0f8fa;
+  padding: 50px 0; /* Reduced from 80px */
   width: 100%;
   position: relative;
   z-index: 10;
@@ -662,31 +671,28 @@
 }
 
 .stats-icon-box {
-  width: 115px;
-  height: 115px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  border: 3px solid var(--dark-navy);
   border-radius: 50%;
-  padding: 0;
+  padding: 20px;
   background: transparent;
-  transition: all 0.3s ease;
-}
-
-.stats-icon-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 5px 10px rgba(31, 42, 68, 0.15));
-  mix-blend-mode: multiply;
+  transition: transform 0.3s ease;
 }
 
 .stats-icon-box:hover {
   transform: translateY(-5px);
 }
 
-
+.stats-icon-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .stats-card h4 {
   color: #1f2a44;
@@ -761,8 +767,8 @@
   position: relative;
   background-color: var(--dark-navy);
   color: var(--white);
-  padding-top: 80px; /* Space for wave */
-  margin-top: 110px;
+  padding-top: 80px; 
+  margin-top: 160px; /* Increased to push it down and avoid overlap with submit button */
 }
 
 .footer-wave {
@@ -1045,7 +1051,7 @@
   }
 
   .who-we-are-section {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 
   .who-inner {
@@ -1058,7 +1064,9 @@
     text-align: center;
   }
 
-
+  .who-underline {
+    margin: 6px auto 30px;
+  }
 
   .who-bold {
     font-size: 1.25rem;
@@ -1073,7 +1081,7 @@
   .composable-ai {
     flex-direction: column;
     text-align: center;
-    padding: 80px 0;
+    padding: 40px 0;
     gap: 40px;
   }
 
@@ -1110,7 +1118,7 @@
   }
 
   .section {
-    padding: 70px 0;
+    padding: 35px 0;
   }
 
   .section-title {
@@ -1329,7 +1337,7 @@
 
 /* Customer Work Logo Slider */
 .customer-work {
-  padding: 120px 0;
+  padding: 60px 0; /* Reduced from 120px */
   background: var(--white);
   overflow: hidden;
 }

@@ -1,6 +1,6 @@
 :root {
   --teal: #2CB398;
-  --dark-navy: #1a2b55;
+  --dark-navy: #1f2a44;
   --navy-lighter: #202b45;
   --text-dark: #222222;
   --text-light: #f5f5f5;
@@ -46,7 +46,7 @@ img {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 50px 0;
 }
 
 .text-teal {
@@ -60,37 +60,33 @@ img {
   padding: 14px 28px;
   font-size: 14px;
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
   border: 2px solid transparent;
-  text-transform: none;
-  letter-spacing: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .btn-teal {
-  background: linear-gradient(to right, #38d39f, #32abb8);
+  background: linear-gradient(to right, #2ec581, #34a2b2);
   color: #ffffff;
-  border: none;
 }
 
 .btn-teal:hover {
-  background: linear-gradient(to right, #2eb98b, #2a929e);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(56, 211, 159, 0.3);
+  background: linear-gradient(to right, #25a86d, #2c8a99);
+  color: #ffffff;
 }
 
 .btn-outline {
   background-color: transparent;
   color: var(--white);
-  border: 2px solid #38d39f;
+  border-color: var(--teal);
 }
 
 .btn-outline:hover {
-  background-color: #38d39f;
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(56, 211, 159, 0.3);
+  background-color: var(--teal);
+  color: #112140;
 }
 
 .btn-full {
